@@ -20,9 +20,6 @@ The yearly data is first aggregated into one list by using \link{fars_read_years
 function row binds the list elements together into a tibble. Finally, dply and tidyr functions are used
 to summarize and spread the data in order to generate the final output.
 }
-\note{
-Imports functions from the extenal packages dplyr, tidyr, and magrittr
-}
 \examples{
 fars_summarize_years(2013:2015)
 

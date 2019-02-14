@@ -18,10 +18,8 @@ can be used as an input to \link{fars_read}.
 }
 \note{
 If the FARS system changes their file naming convention this function will need to be updated
-
-Be sure that the datafile resides in the current working directory (use \code{setwd()})
 }
 \examples{
-make_filename(2017)
+make_filename(2013)
 
 }

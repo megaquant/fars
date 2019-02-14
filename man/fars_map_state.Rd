@@ -7,7 +7,7 @@
 fars_map_state(state.num, year)
 }
 \arguments{
-\item{state.num}{The state number, either an integer or a character to be coerced to integer}
+\item{state.num}{The state number as integer, or character to be coerced}
 
 \item{year}{The year as an integer}
 }
@@ -30,8 +30,6 @@ Year cannot be vectorized or this function will produce an error
 If the state number is invalid or doesn't exist in the data this function will produce an error
 
 If there are no accidents in the state, a message will be produced and no plot will be rendered
-
-Imports functions from the extenal packages dplyr and maps
 }
 \examples{
 fars_map_state(1,2015)

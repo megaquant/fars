@@ -18,12 +18,9 @@ Traffic Safety Administration's Fatality Analysis Reporting System (FARS).
 }
 \note{
 If the file does not exist, or if filename incorrectly specified, this function will return an error.
-
-This function imports \link{read_csv} and \link{tbl_df}
 }
 \examples{
-fars_read("accident_2013.csv.bz2")
-fars_read(make_filename(2015))
+fars_read(make_filename(2014))
 
 }
 \references{

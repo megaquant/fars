@@ -18,8 +18,6 @@ list element is a tibble for a specific year. Only the month and year columns ar
 }
 \note{
 If there is no FARS file for a specific year this function will return a warning and a NULL list element
-
-Imports functions from the extenal packages dplyr and magrittr
 }
 \examples{
 fars_read_years(2013:2015)
