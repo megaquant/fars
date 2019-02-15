@@ -1,5 +1,5 @@
 ---
-title: "FARS Vignette"
+title: "Overview of the fars package"
 author: "Shawn McKenzie"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
@@ -15,6 +15,35 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 ```
+
+
+The functions provided for you in this assignment will be using data from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System, which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes. You can download the data for this assignment here:
+
+fars_read
+Read in a FARS file
+This function reads in a file that has been downloaded from the US National Highway
+Traffic Safety Administration's Fatality Analysis Reporting System (FARS).
+https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars
+
+make_filename
+Make the FARS filename
+This function constructs the FARS filename for the datafile of a selected year. The returned string
+can be used as an input to fars_read.
+
+fars_read_years
+Aggregate FARS data across years
+This function reads in one of more years of FARS data and aggregates the data into a list. Each
+list element is a tibble for a specific year. Only the month and year columns are retained.
+
+fars_summarize_years
+Fatality counts
+This function will count the nunber of motor vehicle fatal injuries for each month of each year
+
+fars_map_state
+Graphical map of state fatalities
+This function produces a graphical map of the state and shows the location of motor vehicle
+fatalities in the year. The map is then auto plotted to the plot window.
+
 
 Vignettes are long form documentation commonly included in packages. Because they are part of the distribution of the package, they need to be as compact as possible. The `html_vignette` output type provides a custom style sheet (and tweaks some options) to ensure that the resulting html is as small as possible. The `html_vignette` format:
 
